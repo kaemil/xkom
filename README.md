@@ -10,5 +10,5 @@ This project was created as xkom recruitment task to do.
 - React (Hooks)
 - HTML5
 - CSS3
-- REDUX
+- Redux
 - JS
