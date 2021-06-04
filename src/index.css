@@ -1,0 +1,223 @@
+body {
+     font-family: 'Open Sans', sans-serif;
+}
+
+/* ChooseSeatCard */
+
+.chooseSeatCard {
+     border: 1px solid #000000;
+     padding: 50px;
+     width: 300px;
+     display: grid;
+     grid-gap: 10px;
+     margin: 200px auto 0 auto;
+}
+
+.chooseSeatCard__warning {
+     text-align: center;
+}
+
+.chooseSeatCard__input {
+     display: flex;
+     height: 30px;
+}
+
+.chooseSeatCard__input div {
+     width: 150px;
+     display: flex;
+     align-self: center;
+}
+
+.chooseSeatCard__input input {
+
+     outline: none;
+     border: 1px solid #000000;
+     box-sizing: border-box;
+     width: 50%;
+     padding: 0 5px 0 5px;
+     height: 30px;
+}
+
+.chooseSeatCard__warning {
+     font-size: 14px;
+     display: flex;
+     justify-content: center;
+     align-self: center;
+}
+
+.chooseSeatCard__checkbox {
+     justify-content: center;
+     display: flex;
+     align-self: center;
+     height: 30px;
+}
+
+.chooseSeatCard__checkbox input {
+     display: flex;
+     align-self: center;
+}
+
+.chooseSeatCard__checkbox input:checked~.checkmark {
+     background-color: #000;
+}
+
+.chooseSeatCard__checkbox label {
+     display: flex;
+     padding-left: 10px;
+     align-self: center;
+}
+
+.chooseSeatCard__button {
+     border: 1px solid #000000;
+     display: block;
+     background-color: #ffffff;
+     height: 30px;
+     padding: 0 5px 0 5px;
+     box-sizing: border-box;
+}
+
+.chooseSeatCard__button:hover {
+     background-color: #000000;
+     color: #ffffff;
+     cursor: pointer;
+}
+
+.chooseSeatCard__button:disabled {
+     opacity: 0.6;
+     color: #646464;
+     border: 1px solid #646464;
+     ;
+}
+
+.chooseSeatCard__button:disabled:hover {
+     cursor: default;
+     color: #646464;
+     background-color: #ffffff;
+}
+
+.chooseSeatCard__checkbox input[type=checkbox] {
+     position: relative;
+}
+
+.chooseSeatCard__checkbox input[type=checkbox]:after {
+     position: absolute;
+     width: 10px;
+     height: 15px;
+     top: 100;
+     content: " ";
+     background-color: #000000;
+     color: #fff;
+     display: inline-block;
+     visibility: visible;
+     padding: 0px 3px;
+     border-radius: 3px;
+}
+
+.chooseSeatCard__checkbox input[type=checkbox]:checked:after {
+     content: "✓";
+     font-size: 12px;
+}
+
+/* MainCard */
+
+.mainCard {
+     text-align: center;
+     width: 890px;
+     display: none;
+     margin: 100px auto 50px auto;
+}
+
+.mainCard__container {
+     display: grid;
+     gap: 10px;
+     grid-template-columns: repeat(15, 50px);
+}
+
+.mainCard__choosedSeatsInfo {
+     margin: 20px 0 20px 0;
+}
+
+.seat:hover {
+     cursor: pointer;
+}
+
+.legend__element .seat:hover:hover {
+     cursor: default;
+}
+
+.reserved:hover {
+     cursor: default;
+}
+
+.mainCard__legend {
+     margin-top: 20px;
+     display: flex;
+     width: 890px;
+}
+
+.legend__element {
+     display: flex;
+     width: 240px;
+}
+
+.seatSelected {
+     border: 1px solid #000000;
+     background-color: #ff8a05;
+     width: 50px;
+     height: 50px;
+}
+
+.seat {
+     border: 1px solid #000000;
+     width: 50px;
+     height: 50px;
+}
+
+.seatEmpty {
+     width: 50px;
+     height: 50px;
+}
+
+.para {
+     margin-left: 10px;
+}
+
+.mainCard__button {
+     border: 1px solid #000000;
+     display: block;
+     background-color: #ffffff;
+     height: 50px;
+     padding: 0 5px 0 5px;
+     box-sizing: border-box;
+     width: 170px;
+}
+
+.mainCard__button:hover {
+     background-color: #000000;
+     color: #ffffff;
+     cursor: pointer;
+}
+
+.mainCard__button:disabled {
+     opacity: 0.6;
+     color: #646464;
+     border: 1px solid #646464;
+     ;
+}
+
+.mainCard__button:disabled:hover {
+     cursor: default;
+     color: #646464;
+     background-color: #ffffff;
+}
+
+/* SummaryCard */
+
+.summaryCard {
+     border: 1px solid #000000;
+     padding: 0px 20px 0px 20px;
+     display: none;
+     width: 600px;
+     margin: 200px auto 200px auto;
+     text-align: center;
+}
