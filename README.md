@@ -12,3 +12,7 @@ This project was created as xkom recruitment task to do.
 - CSS3
 - Redux
 - JS
+
+**Link**
+
+https://kaemil.github.io/xkom/
